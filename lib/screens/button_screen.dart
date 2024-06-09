@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widgets_app/widgets/widgets.dart';
 
 enum Sizes { small, medium, large }
 
@@ -16,70 +17,25 @@ class ButtonScreen extends StatelessWidget {
       ),
       body: ListView(
         padding: const EdgeInsets.all(10.0),
-        children: [
-          const ElevatedButton(
-            onPressed: null, // el null deshabilita el botón
-            child: Text('ElevatedButton deshabilitado'),
+        children: const [
+          ElevatedButtons(),
+          SizedBox(
+            height: 20,
           ),
-          ElevatedButton(
-            onPressed: () => {
-              print('ElevatedButton normal'),
-            },
-            child: const Text('ElevatedButton'),
+          FilledButtons(),
+          SizedBox(
+            height: 20,
           ),
-          ElevatedButton.icon(
-            onPressed: () {},
-            icon: const Icon(Icons.save),
-            label: const Text('ElevatedButton con ícono'),
+          FilledTonalButtons(),
+          SizedBox(
+            height: 20,
           ),
-          const FilledButton(
-            onPressed: null,
-            child: Text('FilledButton desabilitado'),
+          OutlinedButtons(),
+          SizedBox(
+            height: 20,
           ),
-          FilledButton(
-            onPressed: () {},
-            child: const Text('FilledButton normal'),
-          ),
-          FilledButton.icon(
-            onPressed: () {},
-            icon: const Icon(Icons.save),
-            label: const Text('FilledButton con ícono'),
-          ),
-          FilledButton.tonal(
-            onPressed: () {},
-            child: const Text('FilledButton tonal'),
-          ),
-          FilledButton.tonalIcon(
-            onPressed: () {},
-            icon: const Icon(Icons.save),
-            label: const Text('FilledButton tonal icon'),
-          ),
-          const OutlinedButton(
-            onPressed: null,
-            child: Text('OutlinedButton deshabilitado'),
-          ),
-          OutlinedButton(
-            onPressed: () {},
-            child: const Text('OutlinedButton normal'),
-          ),
-          OutlinedButton.icon(
-            onPressed: () {},
-            icon: const Icon(Icons.save),
-            label: const Text('OutlinedButton con ícono'),
-          ),
-          const TextButton(
-            onPressed: null,
-            child: Text('TextButton deshabilitado'),
-          ),
-          TextButton(
-            onPressed: () {},
-            child: const Text('TextButton normal'),
-          ),
-          TextButton.icon(
-            onPressed: () {},
-            icon: const Icon(Icons.save),
-            label: const Text('TextButton con ícono'),
-          ),
+          TextButtons(),
+          /*
           const IconButton(
             onPressed: null,
             icon: Icon(Icons.save),
@@ -88,8 +44,8 @@ class ButtonScreen extends StatelessWidget {
             onPressed: () {},
             icon: const Icon(Icons.save),
             style: ButtonStyle(
-              backgroundColor: MaterialStatePropertyAll(colors.inversePrimary),
-              iconColor: MaterialStatePropertyAll(colors.background),
+              backgroundColor: WidgetStatePropertyAll(colors.inversePrimary),
+              iconColor: WidgetStatePropertyAll(colors.surface),
             ),
           ),
           SegmentedButton(
@@ -105,36 +61,36 @@ class ButtonScreen extends StatelessWidget {
           ),
           const SizedBox(
             height: 100,
-          )
+          )*/
         ],
       ),
-      persistentFooterButtons: [
-        FloatingActionButton.extended(
-          heroTag: 'hero1',
-          onPressed: () {},
-          label: const Text('Add'),
-          icon: const Icon(Icons.add),
-        ),
-        FloatingActionButton.large(
-          heroTag: 'hero2',
-          onPressed: () {},
-          child: const Icon(Icons.add),
-        ),
-        FloatingActionButton(
-          heroTag: 'hero3',
-          onPressed: () {},
-          child: const Icon(Icons.add),
-        ),
-        FloatingActionButton.small(
-          heroTag: 'hero4',
-          onPressed: () {},
-          child: const Icon(Icons.add),
-        ),
-      ],
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        child: const Icon(Icons.add),
-      ),
+      // persistentFooterButtons: [
+      //   FloatingActionButton.extended(
+      //     heroTag: 'hero1',
+      //     onPressed: () {},
+      //     label: const Text('Add'),
+      //     icon: const Icon(Icons.add),
+      //   ),
+      //   FloatingActionButton.large(
+      //     heroTag: 'hero2',
+      //     onPressed: () {},
+      //     child: const Icon(Icons.add),
+      //   ),
+      //   FloatingActionButton(
+      //     heroTag: 'hero3',
+      //     onPressed: () {},
+      //     child: const Icon(Icons.add),
+      //   ),
+      //   FloatingActionButton.small(
+      //     heroTag: 'hero4',
+      //     onPressed: () {},
+      //     child: const Icon(Icons.add),
+      //   ),
+      // ],
+      // floatingActionButton: FloatingActionButton(
+      //   onPressed: () {},
+      //   child: const Icon(Icons.add),
+      // ),
     );
   }
 }
