@@ -1,16 +1,21 @@
 # flutter_widgets_app
 
-A new Flutter project.
+Este proyecto contiene algunos widgets que nos brinda Flutter para utilizar, hay muchos que son de uso muy común para las apps construídas con Flutter.
 
-## Getting Started
+## Cómo iniciar el proyecto
 
-This project is a starting point for a Flutter application.
+- Para ejecutar el proyecto es necesario tener un emulador de Android o iOS ejecutándose.
+- Para android podría utilizar esta [guía](https://jaimetellezb.com/emulador-android-studio/).
+- Para iOS se debe instalar XCode y luego ejecutar el comando ```open -a simulator```.
+- Luego puede utilizar los comandos ```cmd + shift + p```para Mac o ```Ctrl + shift + p```para Windows en **Visual Studio Code** e ir a la opción de ```Flutter: Select Device``` y seleccionar el emulador que se está ejecutando.
+- Ir al archivo `main.dart` y ejecutar en la parte superior derecha el ícono de play `Start Debugging`.
+- Otra opción es por medio del comando `flutter run`.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+# Widgets
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Widgets de Material
+
+### Actions - Botones comunes
+
+![buttons](assets/images/all.png "buttons")
