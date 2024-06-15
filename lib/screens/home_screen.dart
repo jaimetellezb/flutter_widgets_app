@@ -11,16 +11,30 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Widgets App'),
       ),
-      body: ListView.builder(
+      body: GridView.builder(
         itemCount: categoryList.length,
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2,
+          crossAxisSpacing: 4,
+          mainAxisSpacing: 4,
+          mainAxisExtent: 100,
+        ),
         itemBuilder: (context, index) {
           final category = categoryList[index];
-
           return Padding(
             padding: const EdgeInsets.all(8.0),
             child: FilledButton.icon(
+              style: const ButtonStyle(
+                shape: WidgetStatePropertyAll(
+                  ContinuousRectangleBorder(
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(20),
+                    ),
+                  ),
+                ),
+              ),
               onPressed: () {
-                context.go(category.path);
+                context.go('/${category.path}');
               },
               icon: Icon(category.icon),
               label: Text(category.title),
@@ -28,6 +42,24 @@ class HomeScreen extends StatelessWidget {
           );
         },
       ),
+
+      // ListView.builder(
+      //   itemCount: categoryList.length,
+      //   itemBuilder: (context, index) {
+      //     final category = categoryList[index];
+
+      //     return Padding(
+      //       padding: const EdgeInsets.all(8.0),
+      //       child: FilledButton.icon(
+      //         onPressed: () {
+      //           context.go('/${category.path}');
+      //         },
+      //         icon: Icon(category.icon),
+      //         label: Text(category.title),
+      //       ),
+      //     );
+      //   },
+      // ),
     );
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart' show Icons, IconData;
+import 'package:flutter_widgets_app/configs/configs.dart';
 
 class WidgetCategory {
   final String title;
@@ -12,10 +13,20 @@ class WidgetCategory {
   });
 }
 
-const categoryList = <WidgetCategory>[
+final categoryList = <WidgetCategory>[
   WidgetCategory(
-    title: 'Botones',
-    path: '/buttons',
+    title: RouteProperties.buttonScreen.label,
+    path: RouteProperties.buttonScreen.path,
     icon: Icons.smart_button_outlined,
   ),
+  WidgetCategory(
+    title: RouteProperties.floatingButtonScreen.label,
+    path: RouteProperties.floatingButtonScreen.path,
+    icon: Icons.play_arrow_outlined,
+  ),
+  // WidgetCategory(
+  //   title: RouteProperties.iconButtonScreen.label,
+  //   path: RouteProperties.iconButtonScreen.path,
+  //   icon: Icons.arrow_circle_right_outlined,
+  // ),
 ];

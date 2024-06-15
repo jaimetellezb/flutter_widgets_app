@@ -1,5 +1,4 @@
-import 'package:flutter_widgets_app/configs/constants/constants.dart'
-    as constants;
+import 'package:flutter_widgets_app/configs/configs.dart';
 import 'package:flutter_widgets_app/screens/screens.dart';
 import 'package:go_router/go_router.dart';
 
@@ -7,14 +6,24 @@ final appRouter = GoRouter(
   initialLocation: '/',
   routes: [
     GoRoute(
-      name: 'home-screen',
-      path: '/',
+      name: RouteProperties.homeScreen.name,
+      path: RouteProperties.homeScreen.path,
       builder: (context, state) => const HomeScreen(),
       routes: [
         GoRoute(
-          name: constants.buttonScreen,
-          path: 'buttons',
+          name: RouteProperties.buttonScreen.name,
+          path: RouteProperties.buttonScreen.path,
           builder: (context, state) => const ButtonScreen(),
+        ),
+        GoRoute(
+          name: RouteProperties.floatingButtonScreen.name,
+          path: RouteProperties.floatingButtonScreen.path,
+          builder: (context, state) => const FloatingButtonScreen(),
+        ),
+        GoRoute(
+          name: RouteProperties.iconButtonScreen.name,
+          path: RouteProperties.iconButtonScreen.path,
+          builder: (context, state) => const IconButtonScreen(),
         ),
       ],
     ),

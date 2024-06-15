@@ -8,9 +8,6 @@ class ButtonScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final colors = Theme.of(context).colorScheme;
-    Sizes selection = Sizes.medium;
-
     return Scaffold(
       appBar: AppBar(
         title: const Text('Buttons Screen'),
@@ -35,62 +32,11 @@ class ButtonScreen extends StatelessWidget {
             height: 20,
           ),
           TextButtons(),
-          /*
-          const IconButton(
-            onPressed: null,
-            icon: Icon(Icons.save),
+          SizedBox(
+            height: 20,
           ),
-          IconButton(
-            onPressed: () {},
-            icon: const Icon(Icons.save),
-            style: ButtonStyle(
-              backgroundColor: WidgetStatePropertyAll(colors.inversePrimary),
-              iconColor: WidgetStatePropertyAll(colors.surface),
-            ),
-          ),
-          SegmentedButton(
-            segments: const <ButtonSegment<Sizes>>[
-              ButtonSegment<Sizes>(value: Sizes.small, label: Text('S')),
-              ButtonSegment<Sizes>(value: Sizes.medium, label: Text('M')),
-              ButtonSegment<Sizes>(
-                value: Sizes.large,
-                label: Text('L'),
-              ),
-            ],
-            selected: <Sizes>{selection},
-          ),
-          const SizedBox(
-            height: 100,
-          )*/
         ],
       ),
-      // persistentFooterButtons: [
-      //   FloatingActionButton.extended(
-      //     heroTag: 'hero1',
-      //     onPressed: () {},
-      //     label: const Text('Add'),
-      //     icon: const Icon(Icons.add),
-      //   ),
-      //   FloatingActionButton.large(
-      //     heroTag: 'hero2',
-      //     onPressed: () {},
-      //     child: const Icon(Icons.add),
-      //   ),
-      //   FloatingActionButton(
-      //     heroTag: 'hero3',
-      //     onPressed: () {},
-      //     child: const Icon(Icons.add),
-      //   ),
-      //   FloatingActionButton.small(
-      //     heroTag: 'hero4',
-      //     onPressed: () {},
-      //     child: const Icon(Icons.add),
-      //   ),
-      // ],
-      // floatingActionButton: FloatingActionButton(
-      //   onPressed: () {},
-      //   child: const Icon(Icons.add),
-      // ),
     );
   }
 }
