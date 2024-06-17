@@ -13,6 +13,14 @@ class _IconButtonScreenState extends State<IconButtonScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Icon Button Screen'),
+        actions: [
+          IconButton(
+              onPressed: () {},
+              icon: const Icon(
+                Icons.favorite,
+                color: Colors.pink,
+              ))
+        ],
       ),
       body: ListView(
         padding: const EdgeInsets.all(10.0),
@@ -122,14 +130,5 @@ class _IconButtonScreenState extends State<IconButtonScreen> {
         ],
       ),
     );
-  }
-}
-
-class IconsWidget extends StatelessWidget {
-  const IconsWidget({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container();
   }
 }

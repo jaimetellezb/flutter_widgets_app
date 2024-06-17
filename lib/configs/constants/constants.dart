@@ -18,6 +18,11 @@ enum RouteProperties {
     name: 'icon-button-screen',
     path: 'icon-button',
     label: 'Botón de ícono',
+  ),
+  segmentedButtonScreen(
+    name: 'segmented-button-screen',
+    path: 'segmented-button',
+    label: 'Botón segmentado',
   );
 
   final String name;

@@ -24,9 +24,14 @@ final categoryList = <WidgetCategory>[
     path: RouteProperties.floatingButtonScreen.path,
     icon: Icons.play_arrow_outlined,
   ),
-  // WidgetCategory(
-  //   title: RouteProperties.iconButtonScreen.label,
-  //   path: RouteProperties.iconButtonScreen.path,
-  //   icon: Icons.arrow_circle_right_outlined,
-  // ),
+  WidgetCategory(
+    title: RouteProperties.iconButtonScreen.label,
+    path: RouteProperties.iconButtonScreen.path,
+    icon: Icons.arrow_circle_right_outlined,
+  ),
+  WidgetCategory(
+    title: RouteProperties.segmentedButtonScreen.label,
+    path: RouteProperties.segmentedButtonScreen.path,
+    icon: Icons.arrow_circle_right_outlined,
+  ),
 ];

@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widgets_app/widgets/widgets.dart';
 
-enum Sizes { small, medium, large }
-
 class ButtonScreen extends StatelessWidget {
   const ButtonScreen({super.key});
 

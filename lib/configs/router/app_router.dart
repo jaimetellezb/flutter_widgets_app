@@ -25,6 +25,11 @@ final appRouter = GoRouter(
           path: RouteProperties.iconButtonScreen.path,
           builder: (context, state) => const IconButtonScreen(),
         ),
+        GoRoute(
+          name: RouteProperties.segmentedButtonScreen.name,
+          path: RouteProperties.segmentedButtonScreen.path,
+          builder: (context, state) => const SegmentedButtonScreen(),
+        ),
       ],
     ),
   ],
