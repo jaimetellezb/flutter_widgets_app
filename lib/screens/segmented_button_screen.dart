@@ -30,7 +30,7 @@ class _SegmentedButtonScreenState extends State<SegmentedButtonScreen> {
           ),
           Center(
               child: Text(
-            'Categorías',
+            'Filtros',
             style: Theme.of(context).textTheme.titleMedium,
           )),
           const SingleSegmentedCategory(),
@@ -39,7 +39,7 @@ class _SegmentedButtonScreenState extends State<SegmentedButtonScreen> {
           ),
           Center(
               child: Text(
-            'Colores',
+            'Tipos de transporte',
             style: Theme.of(context).textTheme.titleMedium,
           )),
           const MultipleSegmented(),
