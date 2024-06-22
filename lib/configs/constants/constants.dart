@@ -23,6 +23,11 @@ enum RouteProperties {
     name: 'segmented-button-screen',
     path: 'segmented-button',
     label: 'Botón segmentado',
+  ),
+  progressIndicatorScreen(
+    name: 'progress-indicator-screen',
+    path: 'progress-indicator',
+    label: 'Indicadores de progreso',
   );
 
   final String name;

@@ -30,6 +30,11 @@ final appRouter = GoRouter(
           path: RouteProperties.segmentedButtonScreen.path,
           builder: (context, state) => const SegmentedButtonScreen(),
         ),
+        GoRoute(
+          name: RouteProperties.progressIndicatorScreen.name,
+          path: RouteProperties.progressIndicatorScreen.path,
+          builder: (context, state) => const ProgressIndicatorScreen(),
+        ),
       ],
     ),
   ],

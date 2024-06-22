@@ -34,4 +34,9 @@ final categoryList = <WidgetCategory>[
     path: RouteProperties.segmentedButtonScreen.path,
     icon: Icons.arrow_circle_right_outlined,
   ),
+  WidgetCategory(
+    title: RouteProperties.progressIndicatorScreen.label,
+    path: RouteProperties.progressIndicatorScreen.path,
+    icon: Icons.refresh_outlined,
+  ),
 ];
