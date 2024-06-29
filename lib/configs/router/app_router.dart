@@ -35,6 +35,11 @@ final appRouter = GoRouter(
           path: RouteProperties.progressIndicatorScreen.path,
           builder: (context, state) => const ProgressIndicatorScreen(),
         ),
+        GoRoute(
+          name: RouteProperties.badgeScreen.name,
+          path: RouteProperties.badgeScreen.path,
+          builder: (context, state) => const BadgeScreen(),
+        ),
       ],
     ),
   ],

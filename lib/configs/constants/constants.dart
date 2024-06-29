@@ -28,6 +28,11 @@ enum RouteProperties {
     name: 'progress-indicator-screen',
     path: 'progress-indicator',
     label: 'Indicadores de progreso',
+  ),
+  badgeScreen(
+    name: 'badge-screen',
+    path: 'badge',
+    label: 'Insignias',
   );
 
   final String name;

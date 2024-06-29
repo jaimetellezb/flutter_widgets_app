@@ -1,3 +1,4 @@
+export 'badge_screen.dart';
 export 'button_screen.dart';
 export 'floating_button_screen.dart';
 export 'home_screen.dart';
