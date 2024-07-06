@@ -1,5 +1,6 @@
 import 'package:flutter_widgets_app/configs/configs.dart';
 import 'package:flutter_widgets_app/screens/screens.dart';
+import 'package:flutter_widgets_app/screens/snackbar_screen.dart';
 import 'package:go_router/go_router.dart';
 
 final appRouter = GoRouter(
@@ -39,6 +40,11 @@ final appRouter = GoRouter(
           name: RouteProperties.badgeScreen.name,
           path: RouteProperties.badgeScreen.path,
           builder: (context, state) => const BadgeScreen(),
+        ),
+        GoRoute(
+          name: RouteProperties.snackBarScreen.name,
+          path: RouteProperties.snackBarScreen.path,
+          builder: (context, state) => const SnackBarScreen(),
         ),
       ],
     ),

@@ -33,6 +33,11 @@ enum RouteProperties {
     name: 'badge-screen',
     path: 'badge',
     label: 'Insignias',
+  ),
+  snackBarScreen(
+    name: 'snackbar-screen',
+    path: 'snackbar',
+    label: 'SnackBars',
   );
 
   final String name;

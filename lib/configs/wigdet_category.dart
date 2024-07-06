@@ -44,4 +44,9 @@ final categoryList = <WidgetCategory>[
     path: RouteProperties.badgeScreen.path,
     icon: Icons.notifications,
   ),
+  WidgetCategory(
+    title: RouteProperties.snackBarScreen.label,
+    path: RouteProperties.snackBarScreen.path,
+    icon: Icons.messenger_outline_outlined,
+  ),
 ];
