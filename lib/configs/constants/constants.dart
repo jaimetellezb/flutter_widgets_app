@@ -38,6 +38,16 @@ enum RouteProperties {
     name: 'snackbar-screen',
     path: 'snackbar',
     label: 'SnackBars',
+  ),
+  bottomSheetScreen(
+    name: 'bottom-sheet-screen',
+    path: 'bottom-sheet',
+    label: 'Bottom Sheets',
+  ),
+  alertDialogScreen(
+    name: 'alert-dialog-screen',
+    path: 'alert-dialog',
+    label: 'Diálogos',
   );
 
   final String name;

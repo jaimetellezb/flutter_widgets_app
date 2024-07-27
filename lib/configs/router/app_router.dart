@@ -46,6 +46,16 @@ final appRouter = GoRouter(
           path: RouteProperties.snackBarScreen.path,
           builder: (context, state) => const SnackBarScreen(),
         ),
+        GoRoute(
+          name: RouteProperties.bottomSheetScreen.name,
+          path: RouteProperties.bottomSheetScreen.path,
+          builder: (context, state) => const BottomSheetScreen(),
+        ),
+        GoRoute(
+          name: RouteProperties.alertDialogScreen.name,
+          path: RouteProperties.alertDialogScreen.path,
+          builder: (context, state) => const AlertDialogScreen(),
+        ),
       ],
     ),
   ],

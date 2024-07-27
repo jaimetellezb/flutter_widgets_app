@@ -49,4 +49,14 @@ final categoryList = <WidgetCategory>[
     path: RouteProperties.snackBarScreen.path,
     icon: Icons.messenger_outline_outlined,
   ),
+  WidgetCategory(
+    title: RouteProperties.bottomSheetScreen.label,
+    path: RouteProperties.bottomSheetScreen.path,
+    icon: Icons.arrow_downward_outlined,
+  ),
+  WidgetCategory(
+    title: RouteProperties.alertDialogScreen.label,
+    path: RouteProperties.alertDialogScreen.path,
+    icon: Icons.open_in_new_outlined,
+  ),
 ];
