@@ -48,7 +48,10 @@ enum RouteProperties {
     name: 'alert-dialog-screen',
     path: 'alert-dialog',
     label: 'Diálogos',
-  );
+  ),
+
+  //END
+  ;
 
   final String name;
   final String path;

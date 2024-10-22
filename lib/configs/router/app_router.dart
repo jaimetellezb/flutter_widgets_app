@@ -56,6 +56,8 @@ final appRouter = GoRouter(
           path: RouteProperties.alertDialogScreen.path,
           builder: (context, state) => const AlertDialogScreen(),
         ),
+
+        //END
       ],
     ),
   ],

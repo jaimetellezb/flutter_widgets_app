@@ -167,7 +167,7 @@ if __name__ == "__main__":
     widget_name = args.widget_name
 
     # Validar el nombre del widget
-    if re.match(r'^[a-zA-Z0-9_]+$', widget_name) and '_' in widget_name:
+    if re.match(r'^[a-zA-Z0-9_]+$', widget_name):
         create_widget(widget_name)
         
         # Formatear todos los archivos en el directorio lib
