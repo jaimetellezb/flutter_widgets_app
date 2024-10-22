@@ -59,4 +59,6 @@ final categoryList = <WidgetCategory>[
     path: RouteProperties.alertDialogScreen.path,
     icon: Icons.open_in_new_outlined,
   ),
+
+  //END
 ];
