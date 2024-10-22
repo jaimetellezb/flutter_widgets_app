@@ -60,5 +60,10 @@ final categoryList = <WidgetCategory>[
     icon: Icons.open_in_new_outlined,
   ),
 
+  WidgetCategory(
+    title: RouteProperties.cardScreen.label,
+    path: RouteProperties.cardScreen.path,
+    icon: Icons.card_giftcard,
+  ),
   //END
 ];

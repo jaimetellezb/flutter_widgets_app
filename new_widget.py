@@ -36,22 +36,6 @@ def insert_before_end(file_path, code_to_insert):
                 file.write(code_to_insert + '\n')
             file.write(line)
 
-def format_code(file_path):
-    """Formatear el código en el archivo usando Black."""
-    try:
-        subprocess.run(['black', file_path], check=True)
-        print(f"{GREEN}El archivo {file_path} ha sido formateado exitosamente.{NC}")
-    except subprocess.CalledProcessError:
-        print(f"{RED}Error al formatear el archivo {file_path}.{NC}")
-
-def format_all_files_in_directory(directory):
-    """Formatear todos los archivos de Python en un directorio usando Black."""
-    try:
-        subprocess.run(['black', directory], check=True)
-        print(f"{GREEN}Todos los archivos en {directory} han sido formateados exitosamente.{NC}")
-    except subprocess.CalledProcessError:
-        print(f"{RED}Error al formatear los archivos en {directory}.{NC}")
-
 def create_widget(widget_name):
     """Crear el widget y modificar los archivos necesarios."""
     new_name_snake = widget_name
@@ -80,7 +64,6 @@ def create_widget(widget_name):
     """
 
     insert_before_end(const_file, const_code.strip())
-    #format_code(const_file)  # Formatear el archivo de constantes
 
     # Crear la estructura del widget
     print(f"{BLUE}Creando estructura del widget...{NC}")
@@ -107,7 +90,6 @@ class {new_name_pascal}Screen extends StatelessWidget {{
 """)
     
     print(f"El archivo {file_widget} fue creado exitosamente.")
-    #format_code(file_widget)  # Formatear el archivo del widget
 
     # Agregar export en el archivo de pantallas
     file_screens = "lib/screens/screens.dart"
@@ -116,7 +98,6 @@ class {new_name_pascal}Screen extends StatelessWidget {{
         print("Agregando export del nuevo widget en el archivo de barril...")
         with open(file_screens, 'a') as f:
             f.write(f"export '{new_name_snake}_screen.dart';\n")
-        #format_code(file_screens)  # Formatear el archivo de pantallas
     else:
         print(f"Error: El archivo {file_screens} no existe.")
         return
@@ -137,7 +118,6 @@ class {new_name_pascal}Screen extends StatelessWidget {{
     """
     
     insert_before_end(route_file, route_code.strip())
-    #format_code(route_file)  # Formatear el archivo de rutas
 
     # Agregar la categoría en el archivo de categorías
     category_file = "lib/configs/widget_category.dart"
@@ -152,7 +132,6 @@ class {new_name_pascal}Screen extends StatelessWidget {{
     """
         
         insert_before_end(category_file, category_code.strip())
-        #format_code(category_file)  # Formatear el archivo de categorías
     else:
         print(f"Error: El archivo {category_file} no existe.")
         return
@@ -169,8 +148,5 @@ if __name__ == "__main__":
     # Validar el nombre del widget
     if re.match(r'^[a-zA-Z0-9_]+$', widget_name):
         create_widget(widget_name)
-        
-        # Formatear todos los archivos en el directorio lib
-        format_all_files_in_directory('lib')
     else:
         print(RED + "Error: El nombre del widget solo puede contener letras, números y guiones bajos, y debe contener al menos un guion bajo." + NC)

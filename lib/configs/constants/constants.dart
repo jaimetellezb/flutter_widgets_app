@@ -50,6 +50,11 @@ enum RouteProperties {
     label: 'Diálogos',
   ),
 
+  cardScreen(
+    name: 'card-screen',
+    path: 'card',
+    label: 'Card',
+  ),
   //END
   ;
 

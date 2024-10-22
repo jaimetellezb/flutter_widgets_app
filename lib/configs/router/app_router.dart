@@ -57,6 +57,11 @@ final appRouter = GoRouter(
           builder: (context, state) => const AlertDialogScreen(),
         ),
 
+        GoRoute(
+          name: RouteProperties.cardScreen.name,
+          path: RouteProperties.cardScreen.path,
+          builder: (context, state) => const CardScreen(),
+        ),
         //END
       ],
     ),
