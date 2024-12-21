@@ -62,6 +62,16 @@ final appRouter = GoRouter(
           path: RouteProperties.cardScreen.path,
           builder: (context, state) => const CardScreen(),
         ),
+        GoRoute(
+          name: RouteProperties.dividerScreen.name,
+          path: RouteProperties.dividerScreen.path,
+          builder: (context, state) => const DividerScreen(),
+        ),
+        GoRoute(
+          name: RouteProperties.listTileScreen.name,
+          path: RouteProperties.listTileScreen.path,
+          builder: (context, state) => const ListTileScreen(),
+        ),
         //END
       ],
     ),

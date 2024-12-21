@@ -65,5 +65,15 @@ final categoryList = <WidgetCategory>[
     path: RouteProperties.cardScreen.path,
     icon: Icons.card_giftcard,
   ),
+  WidgetCategory(
+    title: RouteProperties.dividerScreen.label,
+    path: RouteProperties.dividerScreen.path,
+    icon: Icons.remove,
+  ),
+  WidgetCategory(
+    title: RouteProperties.listTileScreen.label,
+    path: RouteProperties.listTileScreen.path,
+    icon: Icons.width_normal,
+  ),
   //END
 ];

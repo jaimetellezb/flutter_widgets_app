@@ -72,3 +72,9 @@ WidgetCategory(
 ### Actions - Botones comunes
 
 ![buttons](assets/images/all.png "buttons")
+
+
+
+### Crear nuevo Widget
+
+#### Ejecutar comando `python new_widget.py example`
