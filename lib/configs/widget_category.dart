@@ -75,5 +75,10 @@ final categoryList = <WidgetCategory>[
     path: RouteProperties.listTileScreen.path,
     icon: Icons.width_normal,
   ),
+  WidgetCategory(
+    title: RouteProperties.appBarScreen.label,
+    path: RouteProperties.appBarScreen.path,
+    icon: Icons.toc_sharp,
+  ),
   //END
 ];

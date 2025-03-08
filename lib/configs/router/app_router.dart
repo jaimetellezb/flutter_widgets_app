@@ -72,6 +72,11 @@ final appRouter = GoRouter(
           path: RouteProperties.listTileScreen.path,
           builder: (context, state) => const ListTileScreen(),
         ),
+        GoRoute(
+          name: RouteProperties.appBarScreen.name,
+          path: RouteProperties.appBarScreen.path,
+          builder: (context, state) => const AppBarScreen(),
+        ),
         //END
       ],
     ),

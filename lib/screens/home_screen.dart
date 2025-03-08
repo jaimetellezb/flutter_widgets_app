@@ -36,7 +36,8 @@ class HomeScreen extends StatelessWidget {
                 context.go('/${category.path}');
               },
               icon: Icon(category.icon),
-              label: Text(category.title),
+              label: Align(
+                  alignment: Alignment.centerLeft, child: Text(category.title)),
             ),
           );
         },

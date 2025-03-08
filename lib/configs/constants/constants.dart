@@ -55,16 +55,21 @@ enum RouteProperties {
     path: 'card',
     label: 'Card',
   ),
-dividerScreen(
-        name: 'divider-screen',
-        path: 'divider',
-        label: 'Divider',
-    ),
-listTileScreen(
-        name: 'listTile-screen',
-        path: 'listTile',
-        label: 'Listtile',
-    ),
+  dividerScreen(
+    name: 'divider-screen',
+    path: 'divider',
+    label: 'Divider',
+  ),
+  listTileScreen(
+    name: 'listTile-screen',
+    path: 'listTile',
+    label: 'Listtile',
+  ),
+  appBarScreen(
+    name: 'app-bar-screen',
+    path: 'app-bar',
+    label: 'AppBar',
+  ),
   //END
   ;
 
